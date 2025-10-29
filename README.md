@@ -15,11 +15,11 @@ Preprocessing:
 
 ## 2. Models Used
 Two models were trained using TF-IDF features
-- Logistic Regression (sklearn.linear_model.LogisticRegression)
-- Multinomial Naive Bayes (sklearn.naive_bayes.MultinomialNB)
+- Logistic Regression: (sklearn.linear_model.LogisticRegression)
+- Multinomial Naive Bayes: (sklearn.naive_bayes.MultinomialNB)
 
 ### Feature extraction
-TfidfVectorizer(max_features=5000, ngram_range=(1,2))
+- TF-IDF Vectoriser: TfidfVectorizer(max_features=5000, ngram_range=(1,2))
 
 ## 3. Results
 Logistic Regression (TF-IDF) | Acc: 0.903 | F1: 0.903
