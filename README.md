@@ -2,7 +2,7 @@
 Selected dataset: AG News
 
 ## 1. Data Used
-Two text classification models trained to categorise text into four topics:
+The AG News dataset contains short news texts that combine a headline and a brief description of an article. Each entry is categorised into one of four topic classes:
 1. World
 2. Sports
 3. Business
@@ -26,5 +26,5 @@ Logistic Regression (TF-IDF) | Acc: 0.903 | F1: 0.903
 
 Naive Bayes (TF-IDF)         | Acc: 0.892 | F1: 0.892
 
-Logistic Regression performs better than Naive Bayes, however, the difference is trivial. This suggests that TF-IDF features dominate the overall performance. This aligns with findings suggesting both typically misclassify the same samples (error correlation: 0.76), implying overlapping decision boundaries. Hence, engineering new features would likely result in stronger improvements to model performance in comparison to using a LR + NB ensemble. Further work on feature engieering might involve  expanding n gram ranges, TF-IDF smoothing or integrating embedding-based representations. These methodological adjsutments combined with hyperparameter tuning could improve classification performance. 
+Logistic Regression performs better than Naive Bayes, however, the difference is trivial. This suggests that TF-IDF features dominate the overall performance. This aligns with findings suggesting that both models typically misclassify the same samples (error correlation: 0.76), implying overlapping decision boundaries. Hence, engineering new features would likely result in stronger improvements to model performance compared to model adjustments, such as using an LR + NB ensemble. Further work on feature engineering might involve expanding n-gram ranges, TF-IDF smoothing or integrating embedding-based representations. These methodological adjustments, combined with hyperparameter tuning, could improve classification performance. 
 
